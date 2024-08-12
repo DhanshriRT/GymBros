@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dumbells"
+    tools:context=".activity.GoalActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        android:layout_marginTop="20dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_goal_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/white"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_body_details"
+        android:weightSum="100"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/goal_workout_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal for doing Workout"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/goal_workout_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_height"
+        android:background="@color/bg_text"
+        android:layout_margin="@dimen/mg_et"
+        android:entries="@array/goal_array"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hit the Target"
+                android:background="@drawable/button_bg_body"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"/></LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

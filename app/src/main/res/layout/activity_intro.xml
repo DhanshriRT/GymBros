@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".activity.IntroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="40">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/intro_image"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:padding="2dp"
+        android:background="@color/black">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="40dp"
+            android:elevation="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/click_photo_background"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                android:layout_margin="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transform your body and mind with regular exercise! Boost your energy, improve your mood, and achieve a healthier lifestyle. Whether you're aiming for weight loss, muscle gain, or just staying active, a consistent workout routine is your path to a stronger, more confident you. Start your fitness journey today!"
+                    android:textColor="@color/primary_txt_color"
+                    android:background="@drawable/introbackgroundimg"
+                    android:padding="10dp"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_sign_in_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:background="@drawable/button_bg_body"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/btn_sign_up_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Sign Up"
+            android:background="@drawable/button_bg_body"/>
+    </LinearLayout>
+</LinearLayout>

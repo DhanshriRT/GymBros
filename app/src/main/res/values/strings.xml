@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">GymBros</string>
+    <string name="action_go">Go</string>
+    <string name="baking_title">Baking with Gemini</string>
+    <string name="label_prompt">Prompt</string>
+    <string name="prompt_placeholder">Provide a recipe for the baked goods in the image</string>
+    <string name="image1_description">Cupcake</string>
+    <string name="image2_description">Cookies</string>
+    <string name="image3_description">Cake</string>
+    <string name="results_placeholder">(Results will appear here)</string>
+    <string name="click_here_to_take_a_photo">Click here to take a photo</string>
+    <string name="app_desc">Transform your fitness journey with our AI-powered workout planner. Simply input your weight, fitness goals, and let the Gemini create a custom workout sequence just for you.</string>
+    <string name="Gender">Gender\n</string>
+    <string name="submit">Submit</string>
+    <string name="sign_in">Sign In\n</string>
+    <string name="password">Password\n</string>
+    <string name="email">Email</string>
+    <string name="sign_in_description_text">Enter your email and password to Sign In with us!</string>
+    <string name="sign_up">Sign Up\n</string>
+    <string name="sign_up_description_text">Enter your name, email id and password, to register with us.</string>
+    <string name="name">Name\n</string>
+    <string name="workout">WorkOut</string>
+    <string name="please_wait">Please Wait\n</string>
+    <string name="please_click_back_again_to_exit">Please Click Back to Exit\n</string>
+    <string name="sign_out">Sign Out</string>
+</resources>

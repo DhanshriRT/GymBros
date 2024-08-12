@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/black"
+    android:backgroundTint="@color/black">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_main_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/white"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Lets"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="WorkOut!"
+                android:textSize="30sp"
+                android:textColor="#E10D57"
+                />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            app:srcCompat="@drawable/main_img" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="@color/black">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="40dp"
+            android:elevation="30dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/click_photo_background"
+                android:backgroundTint="@color/black"
+                android:padding="2dp"
+                android:layout_margin="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_desc"
+                    android:textColor="@color/white"
+                    android:background="@drawable/click_photo_background"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="20dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/step1"
+                android:src="@drawable/steps_bullet"
+                android:layout_weight="20"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/enterDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your body details"
+                android:background="@drawable/bg_steps"
+                android:textColor="@color/white"
+                android:layout_weight="80"
+                android:padding="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="20dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/steps_bullet"
+                android:layout_weight="20"
+                android:id="@+id/step2"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/enterGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your goal"
+                android:background="@drawable/bg_steps"
+                android:textColor="@color/white"
+                android:layout_weight="80"
+                android:padding="20dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            >
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/hitTheGym"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg"
+        android:layout_margin="40dp"
+        android:text="Hit the Gym"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

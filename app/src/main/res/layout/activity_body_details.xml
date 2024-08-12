@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black"
+>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_details_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/white"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+ <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:padding="20dp"
+       android:layout_margin="10dp"
+       android:background="@drawable/bg_body_details"
+       android:weightSum="100"
+       >
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+    <!-- Gender Spinner -->
+    <TextView
+        android:id="@+id/genderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_height"
+        android:background="@color/bg_text"
+        android:layout_margin="@dimen/mg_et"
+        android:entries="@array/gender_array"/>
+
+    <!-- Age Input -->
+    <TextView
+        android:id="@+id/ageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/ageInput"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_height"
+        android:layout_margin="@dimen/mg_et"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/txt_color_hint"
+        android:background="@color/bg_text"
+        android:padding="4dp"
+        android:hint="Enter your age"/>
+
+    <!-- Weight Input -->
+    <TextView
+        android:id="@+id/weightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight (kg)"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/weightInput"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_height"
+        android:layout_margin="@dimen/mg_et"
+        android:textColor="@color/white"
+        android:textColorHint="@color/txt_color_hint"
+        android:inputType="numberDecimal"
+        android:padding="4dp"
+        android:background="@color/bg_text"
+        android:hint="Enter your weight"/>
+
+     <TextView
+         android:id="@+id/height_txt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Height(cm)"
+         android:textColor="@color/white"
+         android:textSize="18sp"
+         android:layout_marginTop="8dp"/>
+
+     <EditText
+         android:id="@+id/heightInput"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/et_height"
+         android:layout_margin="@dimen/mg_et"
+         android:textColor="@color/white"
+         android:textColorHint="@color/txt_color_hint"
+         android:inputType="numberDecimal"
+         android:padding="4dp"
+         android:background="@color/bg_text"
+         android:hint="Enter your Height"/>
+
+    <!-- Workout Type Spinner -->
+    <TextView
+        android:id="@+id/workoutTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workout Type"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/workoutTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_height"
+        android:layout_margin="@dimen/mg_et"
+        android:outlineAmbientShadowColor="@color/white"
+        android:background="@color/bg_text"
+        android:entries="@array/workout_type_array"/>
+
+    <!-- Duration Input -->
+    <TextView
+        android:id="@+id/durationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration (minutes)"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/durationInput"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_height"
+        android:layout_margin="@dimen/mg_et"
+        android:background="@color/bg_text"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/txt_color_hint"
+        android:hint="Enter workout duration"/>
+     <TextView
+         android:id="@+id/disease_txt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Any Disease"
+         android:textColor="@color/white"
+         android:textSize="18sp"
+         android:layout_marginTop="8dp"/>
+     <EditText
+         android:id="@+id/disease_input"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/et_height"
+         android:layout_margin="@dimen/mg_et"
+         android:background="@color/bg_text"
+         android:inputType="text"
+         android:textColor="@color/white"
+         android:textColorHint="@color/txt_color_hint"
+         android:hint="Enter disease"/>
+
+    </LinearLayout>
+    <!-- Submit Button -->
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="20"
+                 android:gravity="center"
+                 >
+                 <Button
+                     android:id="@+id/submitDetails"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Hit the Target"
+                     android:textColor="@color/white"
+                     android:background="@drawable/button_bg_body"
+                     android:layout_gravity="center"
+                     android:layout_marginTop="24dp"/></LinearLayout></LinearLayout></ScrollView>
+
+   </LinearLayout>
+
+</LinearLayout>

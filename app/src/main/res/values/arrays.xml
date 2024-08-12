@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="workout_type_array">
+        <item>Gym</item>
+        <item>Yoga</item>
+        <item>Zumba</item>
+        <item>Cardio</item>
+    </string-array>
+    <string-array name="sports_array">
+        <item>Boxing</item>
+        <item>Skipping</item>
+        <item>Swimming</item>
+        <item>Running</item>
+    </string-array>
+    <string-array name="goal_array">
+        <item>Loss Weight</item>
+        <item>Increase Weight</item>
+        <item>Increase Strength</item>
+        <item>Increase Stamina</item>
+        <item>Regular Exercise</item>
+        <item>Maintain body shape</item>
+    </string-array>
+</resources>

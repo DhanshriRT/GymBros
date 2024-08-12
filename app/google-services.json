@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "55904372172",
+    "project_id": "gymbros-1c4dd",
+    "storage_bucket": "gymbros-1c4dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55904372172:android:4c0601ec3554d2c60f0969",
+        "android_client_info": {
+          "package_name": "com.aumeca.fashionista"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVxFIG7fflSr69vnhc8oPBUzhvKb6iwjE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
